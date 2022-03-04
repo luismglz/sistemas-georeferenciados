@@ -1,0 +1,63 @@
+:root{
+  --title-blue-color:#5E3AEE;
+}
+
+html{
+  background-color: #ECEDF4;
+}
+
+#classTitle{
+  font-family: 'Poppins', sans-serif;
+  font-size: 3rem;
+  font-weight: bold;
+  text-align: start;
+  color: #000;
+}
+#classTitle span{
+  color: var(--title-blue-color);
+}
+
+#studentTitle{
+font-family: 'Poppins', sans-serif;
+font-size: 2rem;
+text-align: start;
+}
+
+
+table, th, td{
+  font-family: 'Roboto', sans-serif;
+  width: 50%;
+  color: #000;
+}
+
+td{
+  margin-top: 10px;
+border-bottom: 1px solid;
+  border-color: #000;
+}
+
+.table-item{
+  font-size: 3vh;
+  text-decoration: none;
+  background-color: #ECEDF4;
+  color: black;
+  
+}
+.table-item:hover{
+  
+}
+
+a{
+  color:#000
+}
+
+a:hover{
+  cursor: pointer;
+  font-weight: bold;
+  color: var(--title-blue-color);
+}
+
+.table-section{
+  font-size: 4vh;
+  background-color: #d8d7d7;
+}

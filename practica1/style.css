@@ -1,0 +1,110 @@
+@font-face {
+  font-family: circular;
+  src: url(./res/circular.otf);
+}
+
+*{
+  font-family: circular;
+}
+
+.nav-link {
+  font-size: large;
+  font-weight: 500;
+  text-transform: uppercase;
+  
+}
+
+.nav-link:hover {
+  font-weight: 700;
+}
+
+#logo_header:hover{
+  transform: scale(1.1);
+  transition-duration: 1800ms;
+}
+
+.img-location {
+  height: 300px;
+  object-fit: cover;
+}
+
+#map {
+  height: 300px;
+  width: 300px;
+}
+
+.title-section {
+  text-transform: uppercase;
+  margin-top: 3rem;
+}
+
+.navbar-brand{
+  display: inline-flex;
+  position: relative;
+}
+
+.card-title{
+  margin-top: 1rem;
+  padding-left: 1rem;
+}
+
+.card-description{
+  padding: 0px 1rem 0px;
+  text-align: justify;
+}
+
+.title-section{
+  font-weight: 600;
+}
+
+#destinations_Title{
+  text-align: center;
+  margin-bottom: 1rem;
+
+}
+
+#location_title{
+  text-align: center;
+}
+
+#search_button{
+    background: rgb(255, 56, 92);
+    color: rgb(255, 255, 255);
+    font-family: circular ;
+    font-size: 16px ;
+    font-weight: 600 ;
+    text-align: center;
+    border-radius: 24px;
+    border-style: none;
+    height: 48px;
+    width: 130px;
+}
+
+#search_button:hover{
+  box-shadow: 0 0 11px rgba(33,33,33,.2); 
+}
+
+#btnScrollToTop{
+  position: fixed;
+  right: 10px;
+  bottom: 10px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: rgb(255, 56, 92);
+  box-shadow: 0 0 10px rgba(0,0,0,0.25); 
+  color: #fff;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+#btnScrollToTop:active{
+  background: rgb(211, 43, 74);
+}
+
+#btnScrollToTop:hover{
+  transform: scale(1.4);
+  transition-duration: 1800ms;
+}
+
