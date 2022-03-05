@@ -1,0 +1,37 @@
+body{
+  background-color: #1f2128;
+}
+
+h1{
+  color: #ffea30;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+h2, span, li, .list-group-item{
+  color: #ececed;
+  background-color: #1f2128;
+  font-size: large;
+  
+}
+
+.list-group-item{
+  border: 2px solid;
+}
+
+span{
+  text-transform: uppercase;
+}
+
+.card{
+  margin-top: 2rem;
+}
+
+button{
+  font-weight: 500!important;
+  font-size: large!important;
+}
+
+button:hover{
+  font-weight: bold!important;
+}
