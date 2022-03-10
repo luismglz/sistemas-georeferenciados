@@ -9,8 +9,8 @@ btnScrollToTop.addEventListener("click", () => {
 
 function initMap() {
   let coordinates = {
-    latitude: 35.692226,
-    longitude: 139.767086
+    lat: 35.692226,
+    lng: 139.767086
   }
 
 
@@ -19,7 +19,7 @@ function initMap() {
     document.querySelector('#map'),
     {
       center: coordinates,
-      zoom: 15,
+      zoom: 20,
     }
   );
 
