@@ -26,15 +26,18 @@ function initMap(){
         map,
         title: "Pin"
       }
+
+      const pin = new google.maps.Marker(pinProps);
+      map.setCenter(position);
+
+      const infoWindow = new google.maps.InfoWindow({
+        content: info
+      });
+      
     });
 
 
-    const pin = new google.maps.Marker(pinProps, map);
-    map.setCenter(position);
-
-    const infoWindow = new google.maps.InfoWindow({
-      content: info
-    });
+    
 
     pin.addEventListener('click', () =>{
       infoWindow.open(map, pin)
