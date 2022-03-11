@@ -12,7 +12,7 @@ function getLocation() {
 }
 
 function showPosition(position) {
-  let coordinates = position.coords.latitude + ", "+ position.coords.longitude;
+  let coordinates = position.coords.latitude + ","+ position.coords.longitude;
 
   let imageMap = document.querySelector('#mapImage');
 
