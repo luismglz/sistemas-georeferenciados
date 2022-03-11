@@ -37,7 +37,7 @@ function initMap(){
     });
 
     pin.addEventListener('click', () =>{
-      infoWindow.open()
+      infoWindow.open(map, pin)
     })
   }
 
