@@ -3,7 +3,7 @@ let map = document.querySelector('#map');
 function getLocation() {
   if (navigator.geolocation) {
     navigator.geolocation.getCurrentPosition(showPosition);
-  }else{
+  } else {
     const alert = document.querySelector("#alert");
 
     alert.innerHTML = "Browser could not get the location"
@@ -12,7 +12,7 @@ function getLocation() {
 }
 
 function showPosition(position) {
-  let coordinates = position.coords.latitude + ","+ position.coords.longitude;
+  let coordinates = position.coords.latitude + "," + position.coords.longitude;
 
   let imageMap = document.querySelector('#mapImage');
 
