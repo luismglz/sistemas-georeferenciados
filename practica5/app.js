@@ -16,13 +16,13 @@ function initMap(){
   if(navigator.geolocation){
 
     navigator.geolocation.getCurrentPosition( position => {
-      let position = {
+      let actualPosition = {
         lat: position.coords.latitude,
         lng: position.coords.longitude,
       }
 
       let pinProps = {
-        position: position,
+        position: actualPosition,
         map,
         title: "Pin"
       }
