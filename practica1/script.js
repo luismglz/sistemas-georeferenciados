@@ -19,7 +19,7 @@ function initMap() {
     document.querySelector('#map'),
     {
       center: coordinates,
-      zoom: 20,
+      zoom: 70,
     }
   );
 
