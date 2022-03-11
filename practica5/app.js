@@ -33,15 +33,15 @@ function initMap(){
       const infoWindow = new google.maps.InfoWindow({
         content: info
       });
-      
+
+
+      pin.addEventListener('click', () => {
+        infoWindow.open(map, pin)
+      })
+
     });
 
-
     
-
-    pin.addEventListener('click', () =>{
-      infoWindow.open(map, pin)
-    })
   }
 
 }
