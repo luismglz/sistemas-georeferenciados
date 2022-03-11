@@ -29,7 +29,7 @@ function initMap(){
     });
 
 
-    const pin = new google.Map.Marker(pinProps);
+    const pin = new google.maps.Marker(pinProps);
     map.setCenter(position);
 
     const infoWindow = new google.maps.InfoWindow({
