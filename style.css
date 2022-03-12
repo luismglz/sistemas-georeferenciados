@@ -28,6 +28,7 @@ table, th, td{
   font-family: 'Roboto', sans-serif;
   width: 50%;
   color: #000;
+  text-align: center;
 }
 
 td{
@@ -60,4 +61,10 @@ a:hover{
 .table-section{
   font-size: 4vh;
   background-color: #d8d7d7;
+}
+
+#newItem{
+  font-size: 18px;
+  font-weight: bold;
+  color: var(--title-blue-color);
 }
