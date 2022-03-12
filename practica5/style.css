@@ -1,8 +1,28 @@
 body{
-  background-color: #efefef;
+background: #4CB8C4; 
+background: -webkit-linear-gradient(to right, #3CD3AD, #4CB8C4); 
+background: linear-gradient(to right, #3CD3AD, #4CB8C4); 
+
+
+
+}
+#title{
+  text-align: center;
+  color: #fff;
+  font-weight: 900;
+  font-size: 2.925em;
+  margin-bottom: 3%;
+  letter-spacing: 0.093em;
+  text-shadow: 2px 3px 0px #898999;
 }
 
+
 #map{
-  width: 100%;
-  height: 500px;
+  width: 600px;
+  height: 600px;
+  margin-top: 5vh;
+  border-radius: 10px;
 }
+
+
+

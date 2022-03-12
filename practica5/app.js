@@ -1,47 +1,44 @@
-let info = "<h1>Tokyo, Japan</h1>"
-info += "<p><strong>Address: </strong></p>"
+let placeContent =`
+<h1>De La Salle Bajío University</h1>
+<br/>
+<p><strong>Address: Av Universidad 602, Lomas del Campestre</strong></p>
+<br/>
+<p><strong>Phone: 477 710 8500</strong></p>
+`;
 
-function initMap(){
-  let properties = {
-    center:{
-      lat: 35.692226,
-      lng: 139.767086
+
+function initMap() {
+  var properties = {
+    center: {
+      lat: 21.152162, lng: -101.711022
     },
-    zoom: 80
+    zoom: 50
   }
+  const mapDiv = document.querySelector("#map");
 
-  const mapElement = document.querySelector("#map");
-  const map = new google.maps.Map(mapElement, properties);
+  const map = new google.maps.Map(mapDiv, properties);
+  if (navigator.geolocation) {
 
-  if(navigator.geolocation){
 
-    navigator.geolocation.getCurrentPosition( position => {
-      let actualPosition = {
+    navigator.geolocation.getCurrentPosition(position => {
+      let positionObj = {
         lat: position.coords.latitude,
-        lng: position.coords.longitude,
+        lng: position.coords.longitude
       }
-
-      let pinProps = {
-        position: actualPosition,
+      let pinProperties = {
+        position: positionObj,
         map,
         title: "Pin"
       }
-
-      const pin = new google.maps.Marker(pinProps);
-      map.setCenter(position);
+      const pin = new google.maps.Marker(pinProperties);
+      map.setCenter(positionObj);
 
       const infoWindow = new google.maps.InfoWindow({
-        content: info
+        content: placeContent
       });
-
-
-      pin.addEventListener('click', () => {
-        infoWindow.open(map, pin)
-      })
-
+      pin.addListener("click", () => {
+        infoWindow.open(map, pin);
+      });
     });
-
-    
   }
-
 }

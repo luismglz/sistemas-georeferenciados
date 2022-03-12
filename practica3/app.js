@@ -7,5 +7,11 @@ function getLocation() {
 }
 
 function showPosition(position) {
-  map.innerHTML = "Latitude: " + position.coords.latitude + "<br/>" + "Longitude: " + position.coords.longitude;
+  map.innerHTML = `
+  <p>Latitude: ${position.coords.latitude}</p>
+  <br/>
+  <br/>
+  <p>Longitude: ${position.coords.longitude}</p>
+  `
+  
 }

@@ -16,5 +16,5 @@ function showPosition(position) {
 
   let imageMap = document.querySelector('#mapImage');
 
-  imageMap.src = 'https://maps.googleapis.com/maps/api/staticmap?center=' + coordinates + '&zoom=150&size=900x900&key=AIzaSyCMrQgga-C5zCuZLTVk2MPVzX7naqKZXZU'
+  imageMap.src = 'https://maps.googleapis.com/maps/api/staticmap?center=' + coordinates + '&zoom=150&size=850x850&key=AIzaSyCMrQgga-C5zCuZLTVk2MPVzX7naqKZXZU'
 }
