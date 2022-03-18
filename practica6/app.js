@@ -1,52 +1,43 @@
-
-let map;
-
-var coordinates = {
+var map;
+var coordenadas = {
   lat: 0,
-  lng: 0,
-};
+  lng: 0
+}
 
+var propiedades = {
+  center: coordenadas,
+  zoom: 20,
 
-let properties = {
-  center: coordinates,
-  zoom: 20
-};
+}
 
-
-function initMap() {
-  map = new google.maps.Map(document.getElementById("map"), properties);
-
-  let icon = {
-    url: "https://giphy.com/gifs/travel-pin-ZtJUz2AomrhiOyWhMO",
+function iniciarMapa() {
+  map = new google.maps.Map(document.getElementById("map"), propiedades);
+  var icono = {
+    url: "https://media.giphy.com/media/9373avvwwdeghUnZfF/giphy.gif",
     scaledSize: new google.maps.Size(50, 50),
     origin: new google.maps.Point(0, 0),
-    anchor: new google.maps.Point(0, 0),
+    anchor: new google.maps.Point(0, 0)
   }
 
-  let pin = new google.maps.Marker({
-    position: coordinates,
-    icon: icon,
-    map: map
+  var marker = new google.maps.Marker({
+    postion: coordenadas,
+    icon: icono,
+    map
   });
 
   if (navigator.geolocation) {
-    setInterval(() => {
-      moveToPosition(pin)
-    }, 2000);
-
+    setInterval(() => moverPosition(marker), 2000)
   }
+}
 
-  function moveToPosition(pin) {
-    navigator.geolocation.getCurrentPosition(position => {
-      let pos = {
-        lat: position.coords.latitude,
-        lng: position.coords.longitude,
-      }
-
-      //pin.setPosition(pos);
-      map.panTo(pos);
-      map.setCenter(pos);
-
-    });
-  }
+function moverPosition(marker) {
+  navigator.geolocation.getCurrentPosition(position => {
+    var pos = {
+      lat: position.coords.latitude,
+      lng: position.coords.longitude
+    }
+    marker.setPosition(pos);
+    map.panTo(pos)
+    map.setCenter(pos);
+  })
 }
