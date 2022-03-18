@@ -10,7 +10,7 @@ var propiedades = {
 
 }
 
-function iniciarMapa() {
+function initMap() {
   map = new google.maps.Map(document.getElementById("map"), propiedades);
   var icono = {
     url: "https://media.giphy.com/media/9373avvwwdeghUnZfF/giphy.gif",
