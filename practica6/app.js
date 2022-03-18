@@ -39,11 +39,11 @@ function initMap() {
   function moveToPosition(pin) {
     navigator.geolocation.getCurrentPosition(position => {
       let pos = {
-        lat: position.coords.lat,
-        lng: position.coords.lng,
+        lat: position.coords.latitude,
+        lng: position.coords.longitude,
       }
 
-      pin.setPosition(pos);
+      //pin.setPosition(pos);
       map.panTo(pos);
       map.setCenter(pos);
 
