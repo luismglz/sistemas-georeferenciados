@@ -5,17 +5,89 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Practice 6</title>
-  <link rel="stylesheet" href="./style.css">
+  <title>Practica 6</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+  <style>
+    #map {
+      height: 100vh;
+      width: 100vw;
+    }
+
+    html,
+    body {
+      height: 100vh;
+      width: 100vw;
+      margin: 0;
+      padding: 0;
+    }
+  </style>
 </head>
 
 <body>
+
   <div id="map">
 
   </div>
-  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCMrQgga-C5zCuZLTVk2MPVzX7naqKZXZU&callback=initMap" async defer></script>
-  <script src="./app.js"></script>
 
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="https://kit.fontawesome.com/725bad6274.js" crossorigin="anonymous"></script> <!-- Font Awesome -->
+  <iframe src="https://giphy.com/embed/c8fNCuV1zXigdHRqDL" width="272" height="480" frameBorder="0" class="giphy-embed"
+    allowFullScreen></iframe>
+  <p><a href="https://giphy.com/gifs/location-pin-c8fNCuV1zXigdHRqDL">via GIPHY</a></p>
+  <p><a href="https://giphy.com/gifs/Plugmeintravel-pin-google-map-markerdrop-9373avvwwdeghUnZfF">via GIPHY</a></p>
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCMrQgga-C5zCuZLTVk2MPVzX7naqKZXZU&callback=iniciarMapa"
+    async defer></script>
+  <script>
+    var map;
+    var coordenadas = {
+      lat: 0,
+      lng: 0
+    }
+
+    var propiedades = {
+      center: coordenadas,
+      zoom: 20,
+
+    }
+
+    function iniciarMapa() {
+      map = new google.maps.Map(document.getElementById("map"), propiedades);
+      var icono = {
+        url: "https://media3.giphy.com/media/c8fNCuV1zXigdHRqDL/giphy.gif?cid=ecf05e47dcz0ya6uypbp4ktm4t2icc34p6uk3z9d6zfg0frv&rid=giphy.gif&ct=g",
+        scaledSize: new google.maps.Size(50, 50),
+        origin: new google.maps.Point(0, 0),
+        anchor: new google.maps.Point(0, 0)
+      }
+
+      var marker = new google.maps.Marker({
+        postion: coordenadas,
+        icon: icono,
+        map
+      });
+
+      if (navigator.geolocation) {
+        setInterval(() => moverPosition(marker), 2000)
+      }
+    }
+
+    function moverPosition(marker) {
+      navigator.geolocation.getCurrentPosition(position => {
+        var pos = {
+          lat: position.coords.latitude,
+          lng: position.coords.longitude
+        }
+        marker.setPosition(pos);
+        map.panTo(pos)
+        map.setCenter(pos);
+      })
+    }
+  </script>
 
 </body>
 
