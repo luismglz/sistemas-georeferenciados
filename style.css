@@ -44,9 +44,7 @@ border-bottom: 1px solid;
   color: black;
   
 }
-.table-item:hover{
-  
-}
+
 
 a{
   color:#000
@@ -67,4 +65,23 @@ a:hover{
   font-size: 18px;
   font-weight: bold;
   color: var(--title-blue-color);
+}
+
+#tableContainer1, #tableContainer2, #tableContainer3{
+  width: 100%;
+  max-width: 850px;
+  margin: 60px auto;
+}
+
+
+#partial1, #partial2, #partial3{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+#main{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
 }
