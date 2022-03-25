@@ -28,7 +28,7 @@ function getMarkers(){
       latitude: "138.2529"
     },
 ];
-
+console.log(markers)
 return markers;
 }
 
