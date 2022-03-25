@@ -28,17 +28,17 @@ function getMarkers(){
       latitude: "138.2529"
     },
 ];
-console.log(markers)
+//console.log(markers)
 return markers;
 }
 
 
 function initMap(){
-  const map = new google.maps.Map(document.querySelector('#map'), properties);
+  const map = new google.maps.Map(document.getElementById('map'), properties);
 
   const markers = getMarkers();
 
-  console.log(markers)
+  //console.log(markers)
 
   for(marker of markers){
     let marker = new google.maps.Marker({
