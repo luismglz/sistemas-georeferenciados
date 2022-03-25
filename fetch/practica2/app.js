@@ -13,8 +13,8 @@ function displayData(data) {
   data.forEach(item => {
 
     countries.innerHTML += `
-    <div class="row border bg-light m-2">
-      <div class="col-12">
+    <div class="row card m-2">
+      <div class="col-8">
         <p>Country: <span>${counter} ${item.CountryName}</span></p>
       </div>
     </div>

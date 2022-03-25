@@ -1,0 +1,17 @@
+body{
+  background-color: #172041;
+}
+
+h1{
+color: #F2FFFF;
+}
+
+.card{
+  border-radius: 12px;
+  background-color: #1D2A4D;
+  color: #F2FFFF;
+}
+
+p{
+  font-size: 20px;
+}

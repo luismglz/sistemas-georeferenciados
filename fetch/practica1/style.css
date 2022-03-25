@@ -1,3 +1,46 @@
+:root{
+  --bgColor: #C2E7E4;
+  --bgCard: #E3FAF9;
+  --fontColor: #010349;
+}
+
+body{
+  background-color: var(--bgColor);
+  width: 100%;
+}
+
+
+
 span{
   font-weight: bold;
+}
+
+img{
+  height: 80px;
+
+}
+
+.country-name{
+  font-size: 25px;
+  font-weight: bold;
+  color: var(--fontColor);
+  font-family: 'Lato', sans-serif;
+  
+}
+
+p{
+  color: var(--fontColor);
+  font-size: 18px;
+}
+
+h1{
+  color: var(--fontColor);
+  font-weight: bold;
+  font-family: 'Lato', sans-serif;
+}
+
+.card{
+  background-color: var(--bgCard);
+  border-radius: 20px;
+
 }

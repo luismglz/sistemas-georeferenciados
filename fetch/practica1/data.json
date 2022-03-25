@@ -1,14 +1,42 @@
 [
   {
     "country": "Mexico",
+    "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/17/Flag_of_Mexico.png/1200px-Flag_of_Mexico.png",
     "cases": 203
   },
   {
     "country": "Panama",
+    "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ab/Flag_of_Panama.svg/2560px-Flag_of_Panama.svg.png",
     "cases": 200
   },
   {
     "country": "Colombia",
+    "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/21/Flag_of_Colombia.svg/2560px-Flag_of_Colombia.svg.png",
     "cases": 196
-  }
+  },
+  {
+    "country": "Japan",
+    "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9e/Flag_of_Japan.svg/1280px-Flag_of_Japan.svg.png",
+    "cases": 441245
+  },
+  {
+    "country": "United States",
+    "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Flag_of_the_United_States.svg/1280px-Flag_of_the_United_States.svg.png",
+    "cases": 	16739304
+  },
+  {
+    "country": "Iran",
+    "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/Flag_of_Iran.svg/1280px-Flag_of_Iran.svg.png",
+    "cases": 163909
+  },
+  {
+    "country": "Saudi Arabia",
+    "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0d/Flag_of_Saudi_Arabia.svg/1280px-Flag_of_Saudi_Arabia.svg.png",
+    "cases": 8305
+  },
+    {
+      "country": "Taiwan",
+      "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/72/Flag_of_the_Republic_of_China.svg/1280px-Flag_of_the_Republic_of_China.svg.png",
+      "cases": 1666
+    }
 ]
