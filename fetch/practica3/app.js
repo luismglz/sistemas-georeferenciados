@@ -1,8 +1,8 @@
 //const mapDiv = document.querySelector("#map");
 
 let coordinates = {
-  lat:0,
-  lng:0
+  lat: 0,
+  lng: 0
 }
 
 let properties = {
@@ -12,7 +12,7 @@ let properties = {
 
 function getMarkers(){
   const markers = [
-    {
+    /*{
     name: "Mexico",
     latitude: "-99.13312",
     longitude: "19.43339"
@@ -36,11 +36,24 @@ function getMarkers(){
       name: "Israel",
       latitude: "35.22150",
       longitude: "31.78094"
-    },
+    },*/
+    {
+      name: "México",
+      longitude: "-99.1276",
+      latitude: "19.427"
+    }, {
+      name: "Brazil",
+      longitude: "-47.9292",
+      latitude: "-15.7801"
+    }, {
+      name: "Spain",
+      longitude: "-3.70327",
+      latitude: "40.4167"
+    }
 ];
 //console.log(markers)
 return markers;
-}
+};
 
 
 function initMap(){
@@ -52,7 +65,7 @@ function initMap(){
 
   for(item of markers){
     let marker = new google.maps.Marker({
-      map:map,
+      map: map,
       position: new google.maps.LatLng(item.latitude, item.longitude),
       title: item.name
     });
