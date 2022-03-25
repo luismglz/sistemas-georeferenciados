@@ -14,28 +14,28 @@ function getMarkers(){
   const markers = [
     {
     name: "Mexico",
-    longitude: "-99.1276",
-    latitude: "-19.427"
+    latitude: "-99.13312",
+    longitude: "19.43339"
     },
     {
       name: "United States",
-      longitude: "37.0902",
-      latitude: "95.7129"
+      latitude: "95.7129",
+      longitude: "37.0902"
     },
     {
       name: "Japan",
-      longitude: "35.65947",
-      latitude: "139.70057"
+      latitude: "139.70057",
+      longitude: "35.65947"
     },
     {
       name: "India",
-      longitude: "28.6139",
-      latitude: "77.2090"
+      latitude: "77.2090",
+      longitude: "28.6139"
     },
     {
       name: "Israel",
-      longitude: "31.78094",
-      latitude: "35.22150"
+      latitude: "35.22150",
+      longitude: "31.78094"
     },
 ];
 //console.log(markers)
