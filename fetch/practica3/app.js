@@ -42,7 +42,17 @@ function getMarkers(){
       name: "Israel",
       longitude: "35.22150",
       latitude: "31.78094"
-    }
+    },
+    {
+      name: "Italy",
+      longitude: "12.49312",
+      latitude: "41.88924"
+    },
+    {
+      name: "Saudi Arabia",
+      longitude: "46.672547",
+      latitude: "24.712247"
+    },
 ];
 //console.log(markers)
 return markers;
