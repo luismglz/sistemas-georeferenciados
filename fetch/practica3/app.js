@@ -27,7 +27,9 @@ function getMarkers(){
       longitude: "36.2048",
       latitude: "138.2529"
     },
-]
+];
+
+return markers;
 }
 
 
