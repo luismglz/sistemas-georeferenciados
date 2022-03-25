@@ -17,38 +17,31 @@ function getMarkers(){
     latitude: "-99.13312",
     longitude: "19.43339"
     },
-    {
-      name: "United States",
-      latitude: "95.7129",
-      longitude: "37.0902"
-    },
-    {
-      name: "Japan",
-      latitude: "139.70057",
-      longitude: "35.65947"
-    },
-    {
-      name: "India",
-      latitude: "77.2090",
-      longitude: "28.6139"
-    },
-    {
-      name: "Israel",
-      latitude: "35.22150",
-      longitude: "31.78094"
-    },*/
+    */
     {
       name: "México",
       longitude: "-99.1276",
       latitude: "19.427"
-    }, {
-      name: "Brazil",
-      longitude: "-47.9292",
-      latitude: "-15.7801"
-    }, {
-      name: "Spain",
-      longitude: "-3.70327",
-      latitude: "40.4167"
+    }, 
+    {
+      name: "United States",
+      longitude: "-118.475768",
+      latitude: "33.995237",
+    },
+    {
+      name: "Japan",
+      longitude: "139.70057",
+      latitude: "35.65947"
+    },
+    {
+      name: "India",
+      longitude: "77.2090",
+      latitude: "28.6139"
+    },
+    {
+      name: "Israel",
+      longitude: "35.22150",
+      latitude: "31.78094"
     }
 ];
 //console.log(markers)
