@@ -24,8 +24,18 @@ function getMarkers(){
     },
     {
       name: "Japan",
-      longitude: "36.2048",
-      latitude: "138.2529"
+      longitude: "35.65947",
+      latitude: "139.70057"
+    },
+    {
+      name: "India",
+      longitude: "28.6139",
+      latitude: "77.2090"
+    },
+    {
+      name: "Israel",
+      longitude: "31.78094",
+      latitude: "35.22150"
     },
 ];
 //console.log(markers)
@@ -40,12 +50,13 @@ function initMap(){
 
   //console.log(markers)
 
-  for(marker of markers){
+  for(item of markers){
     let marker = new google.maps.Marker({
       map:map,
-      position: new google.LatLng(marker.latitude, marker.longitude),
-      title: marker.name
-    })
+      position: new google.maps.LatLng(item.latitude, item.longitude),
+      title: item.name
+    });
+    
   }
 
 }
