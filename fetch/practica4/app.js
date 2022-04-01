@@ -13,9 +13,8 @@ var propiedades = {
 
 function initMap() {
 
-  const url = 'https://sistemasgeo.com/2022/fetch/paises.json'
 
-  fetch(url)
+  fetch('countries.json')
     .then(response =>{
 
       response.json()
@@ -23,11 +22,7 @@ function initMap() {
 
         const map = new google.maps.Map(document.getElementById('map'), propiedades);
 
-        console.log(datos);
-
         datos.forEach(marcador => {
-
-          console.log(marcador);
 
           var informacion = "<strong>País:</strong> " + marcador.CountryName;
 
@@ -49,7 +44,7 @@ function initMap() {
       });
     })
     .catch(function (error) {
-      console.log('Error: ' + error.message);
+      console.log(error.message);
     });
 
 
