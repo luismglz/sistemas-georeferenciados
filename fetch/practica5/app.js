@@ -60,7 +60,7 @@ function initMap(){
     counter++;
   });
 
-  let markerCluster = new MarkerCluterer(map, markers, {
+  let markerClusterer = new MarkerClusterer(map, markers, {
     imagePath: 'https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/m',
     gridSize: 60,
     maxZoom: 10
