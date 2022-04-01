@@ -30,6 +30,7 @@ const locations = [
   { lat: 25.196866, lng: 55.263843 }//DUBAI X
 ];
 
+initMap();
 
 function initMap(){
   let map = new google.maps.Map(
