@@ -1,6 +1,9 @@
 html, body{
   margin: 0px;
   padding: 0px;
+  background-color: #2F2F2F;
+  overflow: hidden;
+  font-family: 'Rubik', sans-serif;
 }
 
 #map{
@@ -15,4 +18,10 @@ html, body{
 
 h1{
   margin: 20px 0px;
+  color: #FFFFFF!important;
+}
+
+button{
+  font-size: 25px!important;
+  font-weight: 500;
 }
