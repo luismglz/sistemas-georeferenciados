@@ -5,7 +5,12 @@ function initMap(){
   let styleMap = new google.maps.StyledMapType([
     { elementType: 'geometry', stylers: [{ color: '#242f3e'}]},
     { elementType: 'labels.text.stroke', stylers: [{ color: '#242f3e' }] },
-    { elementType: 'labels.text.fill', stylers: [{ color: '#7f97b8' }] }
+    { elementType: 'labels.text.fill', stylers: [{ color: '#7f97b8' }] },
+    {
+      featureType: 'poi',
+      elementType: 'label.text.fill',
+      stylers: [{ color:'#2d65b3'}]
+    }
   ], {name: 'Dark Mode'});
 
 
