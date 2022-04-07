@@ -16,7 +16,7 @@ script.src = `https://maps.googleapis.com/maps/api/js?key=AIzaSyCMrQgga-C5zCuZLT
 
 document.head.appendChild(script);
 
-let initMap = () => {
+function initMap () {
   let map = new google.maps.Map(document.getElementById("map"),
   {
     center: coordinates,
