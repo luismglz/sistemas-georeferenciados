@@ -10,7 +10,22 @@ function initMap(){
       featureType: 'poi',
       elementType: 'label.text.fill',
       stylers: [{ color:'#2d65b3'}]
-    }
+    },
+    {
+      featureType: 'poi.park',
+      elementType: 'geometry',
+      stylers: [{ color: '#263c3f' }]
+    },
+    {
+      featureType: 'road',
+      elementType: 'geometry.stroke',
+      stylers: [{ color: '#212a37' }]
+    },
+    {
+      featureType: 'road',
+      elementType: 'labels.text.fill',
+      stylers: [{ color: '#9ca5b3' }]
+    },
   ], {name: 'Dark Mode'});
 
 
@@ -27,8 +42,8 @@ function initMap(){
 
   let mapGoogle = new google.maps.Map(map, properties);
 
-  map.mapTypes.set('style_map', styleMap);
-  map.setMapTypeId('style_map')
+  mapGoogle.mapTypes.set('style_map', styleMap);
+  mapGoogle.setMapTypeId('style_map')
 
 
 }
