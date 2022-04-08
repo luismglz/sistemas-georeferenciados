@@ -14,7 +14,7 @@ function initMap() {
   let googleMap = new google.maps.Map(map, properties);
 
   let icon = {
-    url: "https://media.giphy.com/media/1ZweHMlSaxcc32mSSu/giphy.gif",
+    url: "https://media.giphy.com/media/1oF1MaxVOqrgtG4hev/giphy.gif",
     scaledSize: new google.maps.Size(25, 25),
     origin: new google.maps.Point(0, 0),
     anchor: new google.maps.Point(0, 0)
