@@ -1,5 +1,5 @@
-
-(function initMap(){
+initMap()
+function initMap(){
 
 
   let styleMap = new google.maps.StyledMapType([
@@ -264,4 +264,4 @@
   mapGoogle.setMapTypeId('style_map')
 
 
-})()
+}
