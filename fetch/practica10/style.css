@@ -1,11 +1,53 @@
-html,body {
+html, body{
   margin: 0px;
   padding: 0px;
+  background-color: #6750A4!important;
 }
 
 #map {
+  width: 80%;
+  height: 500px;
+  margin: auto;
+  border-radius: 10px;
+  display: flex!important;
+  align-items: center !important;
+  justify-content: center !important;
+}
 
-  width: 100%;
-  height: 340px;
+span{
+  font-weight: bold;
+}
 
+h1{
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+p{
+  font-size: 19px;
+  text-align: justify;
+  display: flex;
+  align-content: center;
+}
+
+#card{
+  margin: auto;
+  border-radius: 20px;
+  padding: 10px;
+  background-color: #EADDFF;
+  border: 0;
+}
+
+#start{
+  background-color: #21005D!important;
+  color: #EADDFF;
+  border: 0;
+  font-weight: bold;
+}
+
+#stop{
+  color: #EADDFF;
+  border: 0;
+  font-weight: bold;
 }

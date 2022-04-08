@@ -54,11 +54,17 @@ function initMap() {
 
 
         const trackingDetailsHTML = `
-          <p>Coordinates: ${coordinates}</p>
-          <p>Precision: ${precision}</p>
-          <p>Altitude: ${altitude}</p>
-          <p>Speed: ${speed}</p>
-          <p>Date: ${dateTracking}</p>
+
+        <div class="row col-9 col-sm-12 col-xl-6 card" id="card">
+          <div class="col-12 col-sm-12">
+            <p><span>Coordinates:&nbsp</span> ${ coordinates}</p>
+            <p><span>Precision:&nbsp</span> ${ precision}</p>
+            <p><span>Altitude:&nbsp</span> ${ altitude}</p>
+            <p><span>Speed:&nbsp</span> ${ speed}</p>
+            <p><span>Date:&nbsp</span> ${ dateTracking}</p>
+          </div>
+         </div>
+
         `;
 
         const data = document.getElementById('data');
@@ -79,7 +85,15 @@ function initMap() {
       if (watchId !== null) {
 
         navigator.geolocation.clearWatch(watchId);
-        const htmlStopTracking = `<p>Tracking stopped</p>`;
+        const htmlStopTracking = `
+         <div class="row col-6 card" id="card">
+          <div class="col-12 md:col-6">
+            <p class="fs-3 fw-bold">Tracking stopped</p>
+          </div>
+         </div>
+
+
+        `;
         const data = document.getElementById('data');
         data.innerHTML = htmlStopTracking;
       }
