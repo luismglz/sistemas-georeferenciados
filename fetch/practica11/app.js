@@ -1,7 +1,7 @@
 function initMap(){
   let coordinates = {
-    lat: 21.152639,
-    lng: -101.711598
+    lat: 22.310885707917485,
+    lng: 114.17102910863792
   }
 
   let propsMap1 = {
