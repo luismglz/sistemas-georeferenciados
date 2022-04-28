@@ -1,4 +1,4 @@
-function initMap(){
+function initMap() {
   let coordinates = {
     lat: 22.310885707917485,
     lng: 114.17102910863792
@@ -56,7 +56,7 @@ function initMap(){
       position: google.maps.ControlPosition.LEFT_TOP
     },
     fullscreenControl: true
-}
+  }
   let map5 = new google.maps.Map(document.getElementById('map5'), propsMap5);
 
 
@@ -82,7 +82,7 @@ function initMap(){
   let propsMap7 = {
     center: coordinates,
     zoom: 17,
-    mapTypeControl: true,
+    mapTypeId: true,
     mapTypeControlOption: {
       style: google.maps.MapTypeControlStyle.HORIZONTAL_BAR,
       position: google.maps.ControlPosition.TOP_CENTER
