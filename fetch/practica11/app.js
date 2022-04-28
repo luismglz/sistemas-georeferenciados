@@ -37,4 +37,58 @@ function initMap(){
 
   }
   map4 = new google.maps.Map(document.getElementById('map4'), propsMap4);
+
+  let propsMap5 = {
+    center: coordinates,
+    zoom: 17,
+    mapTypeControl: true,
+    mapTypeControlOption: {
+      style: google.maps.MapTypeControlStyle.HORIZONTAL_BAR,
+      position: google.maps.ControlPosition.TOP_CENTER
+  },
+  zoomControl: true,
+  zoomControlOptions: {
+    position: google.maps.ControlPosition.LEFT_CENTER
+  },
+  scaleControl: true,
+  streetViewControl: true,
+  streetViewControlOptions: {
+    position: google.maps.ControlPosition.LEFT_TOP
+  },
+  fullScreenControl: true
+}
+  map5 = new google.maps.Map(document.getElementById('map5'), propsMap5);
+
+
+  let limits = {
+    north: 22.345092,
+    south: 22.273639,
+    west: 22.313244,
+    east: 22.310990,
+  }
+
+
+  let propsMap6 = {
+    center: coordinates,
+    zoom: 17,
+    restriction: {
+      latlngBounds: limits,
+      strictBounds: false
+    }
+
+  }
+  map6 = new google.maps.Map(document.getElementById('map6'), propsMap6);
+
+  let propsMap7 = {
+    center: coordinates,
+    zoom: 17,
+    mapTypeControl: true,
+    mapTypeControlOption: {
+      style: google.maps.MapTypeControlStyle.HORIZONTAL_BAR,
+      position: google.maps.ControlPosition.TOP_CENTER
+    }
+
+  }
+  map7 = new google.maps.Map(document.getElementById('map7'), propsMap7);
+
 }
