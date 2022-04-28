@@ -9,14 +9,14 @@ function initMap(){
     zoom: 17,
     disableDefaultUI: true
   }
-  map1 = new google.maps.Map(document.getElementById('map1'), propsMap1);
+  let map1 = new google.maps.Map(document.getElementById('map1'), propsMap1);
 
   let propsMap2 = {
     center: coordinates,
     zoom: 17,
     disableDefaultUI: true
   }
-  map2 = new google.maps.Map(document.getElementById('map2'), propsMap2);
+  let map2 = new google.maps.Map(document.getElementById('map2'), propsMap2);
 
   let propsMap3 = {
     center: coordinates,
@@ -24,7 +24,7 @@ function initMap(){
     zoomControl: false,
     scaleControl: false
   }
-  map3 = new google.maps.Map(document.getElementById('map3'), propsMap3);
+  let map3 = new google.maps.Map(document.getElementById('map3'), propsMap3);
 
   let propsMap4 = {
     center: coordinates,
@@ -36,28 +36,28 @@ function initMap(){
     }
 
   }
-  map4 = new google.maps.Map(document.getElementById('map4'), propsMap4);
+  let map4 = new google.maps.Map(document.getElementById('map4'), propsMap4);
 
   let propsMap5 = {
     center: coordinates,
     zoom: 17,
     mapTypeControl: true,
-    mapTypeControlOption: {
+    mapTypeControlOptions: {
       style: google.maps.MapTypeControlStyle.HORIZONTAL_BAR,
       position: google.maps.ControlPosition.TOP_CENTER
-  },
-  zoomControl: true,
-  zoomControlOptions: {
-    position: google.maps.ControlPosition.LEFT_CENTER
-  },
-  scaleControl: true,
-  streetViewControl: true,
-  streetViewControlOptions: {
-    position: google.maps.ControlPosition.LEFT_TOP
-  },
-  fullScreenControl: true
+    },
+    zoomControl: true,
+    zoomControlOptions: {
+      position: google.maps.ControlPosition.LEFT_CENTER
+    },
+    scaleControl: true,
+    streetViewControl: true,
+    streetViewControlOptions: {
+      position: google.maps.ControlPosition.LEFT_TOP
+    },
+    fullscreenControl: true
 }
-  map5 = new google.maps.Map(document.getElementById('map5'), propsMap5);
+  let map5 = new google.maps.Map(document.getElementById('map5'), propsMap5);
 
 
   let limits = {
@@ -72,12 +72,12 @@ function initMap(){
     center: coordinates,
     zoom: 17,
     restriction: {
-      latlngBounds: limits,
+      latLngBounds: limits,
       strictBounds: false
     }
 
   }
-  map6 = new google.maps.Map(document.getElementById('map6'), propsMap6);
+  let map6 = new google.maps.Map(document.getElementById('map6'), propsMap6);
 
   let propsMap7 = {
     center: coordinates,
