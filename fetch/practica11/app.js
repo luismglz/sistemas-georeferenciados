@@ -31,7 +31,7 @@ function initMap(){
     zoom: 17,
     mapTypeControl: true,
     mapTypeControlOption: {
-      style: google.maps.mapTypeControlStyle.DROPDOWN_MENU,
+      style: google.maps.MapTypeControlStyle.DROPDOWN_MENU,
       mapTypeIds: ['roadmap', 'satellite', 'terrain']
     }
 
