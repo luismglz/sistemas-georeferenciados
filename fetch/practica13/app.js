@@ -1,4 +1,3 @@
-
 var map;
 
 var markers = [];
