@@ -67,7 +67,7 @@ function initMap(){
 
     nivelZoom = mapa3.getZoom();
 
-    if(infowindow){
+    if (infowindow.classList.contains('gm-style-iw')){
       infowindow.remove()
     }else{
       infowindow.setContent('Zoom:' + nivelZoom);
