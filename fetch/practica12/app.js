@@ -60,11 +60,14 @@ function initMap(){
       position: coordenadas
     });
 
-    infowindow ? infowindow.remove() : infowindow.open(mapa3)
+    
+    infowindow.open(mapa3)
 
     //infowindow.open(mapa3);
 
     nivelZoom = mapa3.getZoom();
+
+    infowindow ? infowindow.remove() : null
     infowindow.setContent('Zoom:' + nivelZoom);
 
   });
