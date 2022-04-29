@@ -2,7 +2,7 @@ var map;
 
 var markers = [];
 
-function initMap() {
+function iniciaMapa() {
 
 
   var coordenadas = { lat: 21.152639, lng: -101.711598 };
