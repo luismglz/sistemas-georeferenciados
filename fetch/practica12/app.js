@@ -67,8 +67,12 @@ function initMap(){
 
     nivelZoom = mapa3.getZoom();
 
-    infowindow ? infowindow.remove() : null
-    infowindow.setContent('Zoom:' + nivelZoom);
+    if(infowindow){
+      infowindow.remove()
+    }else{
+      infowindow.setContent('Zoom:' + nivelZoom);
+    }
+   
 
   });
 
