@@ -53,14 +53,16 @@ function initMap(){
   mapa3.addListener('zoom_changed', function () {
     
 
-    infowindow ? infowindow.remove() : null
+    
 
     var infowindow = new google.maps.InfoWindow({
       content: 'Cambia el zoom',
       position: coordenadas
     });
 
-    infowindow.open(mapa3);
+    infowindow ? infowindow.remove() : infowindow.open(mapa3)
+
+    //infowindow.open(mapa3);
 
     nivelZoom = mapa3.getZoom();
     infowindow.setContent('Zoom:' + nivelZoom);
