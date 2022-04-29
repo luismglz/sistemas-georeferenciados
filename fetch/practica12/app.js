@@ -1,8 +1,8 @@
 function initMap(){
 
   var coordenadas = { 
-    lat: 21.152639, 
-    lng: -101.711598 
+    lat: 40.750211402271255, 
+    lng: -73.98752707437586
   };
 
   var propiedades = {
